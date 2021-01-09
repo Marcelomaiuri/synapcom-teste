@@ -1,0 +1,204 @@
+{
+    "productId": 3760,
+    "name": "Camiseta Hummel Brick Infantil",
+    "salesChannel": "1",
+    "available": true,
+    "displayMode": "especificacao",
+    "dimensions": [
+        "Tamanho"
+    ],
+    "dimensionsInputType": {
+        "Tamanho": "Radio"
+    },
+    "dimensionsMap": {
+        "Tamanho": [
+            "6",
+            "8",
+            "10",
+            "12",
+            "14"
+        ]
+    },
+    "skus": [
+        {
+            "sku": 14206,
+            "skuname": "Camiseta Hummel Brick Infantil - 6",
+            "dimensions": {
+                "Tamanho": "6"
+            },
+            "available": true,
+            "availablequantity": 99999,
+            "cacheVersionUsedToCallCheckout": "C189D0C23EB9B037DDBFD34D17C65D3C_",
+            "listPriceFormated": "R$ 64,90",
+            "fullSellingPrice": "R$ 29,90",
+            "listPrice": 6490,
+            "taxFormated": "R$ 0,00",
+            "taxAsInt": 0,
+            "bestPriceFormated": "R$ 29,90",
+            "bestPrice": 2990,
+            "spotPrice": 2990,
+            "installments": 1,
+            "installmentsValue": 2990,
+            "installmentsInsterestRate": 0,
+            "image": "https://hummelbrasil.vteximg.com.br/arquivos/ids/156216-380-507/BR000081_mescla_1.jpg?v=636839429803330000",
+            "sellerId": "1",
+            "seller": "Hummel",
+            "measures": {
+                "cubicweight": 2.0556,
+                "height": 23,
+                "length": 13,
+                "weight": 1000,
+                "width": 33
+            },
+            "unitMultiplier": 1,
+            "rewardValue": 0,
+            "values": [
+                "6"
+            ]
+        },
+        {
+            "sku": 14207,
+            "skuname": "Camiseta Hummel Brick Infantil - 8",
+            "dimensions": {
+                "Tamanho": "8"
+            },
+            "available": false,
+            "availablequantity": 0,
+            "cacheVersionUsedToCallCheckout": null,
+            "listPriceFormated": "R$ 0,00",
+            "fullSellingPrice": "R$ 9.999.876,00",
+            "listPrice": 0,
+            "taxFormated": "R$ 0,00",
+            "taxAsInt": 0,
+            "bestPriceFormated": "R$ 9.999.876,00",
+            "bestPrice": 999987600,
+            "spotPrice": 999987600,
+            "installments": 0,
+            "installmentsValue": 0,
+            "installmentsInsterestRate": null,
+            "image": "https://hummelbrasil.vteximg.com.br/arquivos/ids/156216-380-507/BR000081_mescla_1.jpg?v=636839429803330000",
+            "sellerId": "1",
+            "seller": "Hummel",
+            "measures": {
+                "cubicweight": 2.0556,
+                "height": 23,
+                "length": 13,
+                "weight": 1000,
+                "width": 33
+            },
+            "unitMultiplier": 1,
+            "rewardValue": 0,
+            "values": [
+                "8"
+            ]
+        },
+        {
+            "sku": 14208,
+            "skuname": "Camiseta Hummel Brick Infantil - 10",
+            "dimensions": {
+                "Tamanho": "10"
+            },
+            "available": false,
+            "availablequantity": 0,
+            "cacheVersionUsedToCallCheckout": null,
+            "listPriceFormated": "R$ 0,00",
+            "fullSellingPrice": "R$ 9.999.876,00",
+            "listPrice": 0,
+            "taxFormated": "R$ 0,00",
+            "taxAsInt": 0,
+            "bestPriceFormated": "R$ 9.999.876,00",
+            "bestPrice": 999987600,
+            "spotPrice": 999987600,
+            "installments": 0,
+            "installmentsValue": 0,
+            "installmentsInsterestRate": null,
+            "image": "https://hummelbrasil.vteximg.com.br/arquivos/ids/156216-380-507/BR000081_mescla_1.jpg?v=636839429803330000",
+            "sellerId": "1",
+            "seller": "Hummel",
+            "measures": {
+                "cubicweight": 2.0556,
+                "height": 23,
+                "length": 13,
+                "weight": 1000,
+                "width": 33
+            },
+            "unitMultiplier": 1,
+            "rewardValue": 0,
+            "values": [
+                "10"
+            ]
+        },
+        {
+            "sku": 14209,
+            "skuname": "Camiseta Hummel Brick Infantil - 12",
+            "dimensions": {
+                "Tamanho": "12"
+            },
+            "available": false,
+            "availablequantity": 0,
+            "cacheVersionUsedToCallCheckout": null,
+            "listPriceFormated": "R$ 0,00",
+            "fullSellingPrice": "R$ 9.999.876,00",
+            "listPrice": 0,
+            "taxFormated": "R$ 0,00",
+            "taxAsInt": 0,
+            "bestPriceFormated": "R$ 9.999.876,00",
+            "bestPrice": 999987600,
+            "spotPrice": 999987600,
+            "installments": 0,
+            "installmentsValue": 0,
+            "installmentsInsterestRate": null,
+            "image": "https://hummelbrasil.vteximg.com.br/arquivos/ids/156216-380-507/BR000081_mescla_1.jpg?v=636839429803330000",
+            "sellerId": "1",
+            "seller": "Hummel",
+            "measures": {
+                "cubicweight": 2.0556,
+                "height": 23,
+                "length": 13,
+                "weight": 1000,
+                "width": 33
+            },
+            "unitMultiplier": 1,
+            "rewardValue": 0,
+            "values": [
+                "12"
+            ]
+        },
+        {
+            "sku": 14210,
+            "skuname": "Camiseta Hummel Brick Infantil - 14",
+            "dimensions": {
+                "Tamanho": "14"
+            },
+            "available": true,
+            "availablequantity": 99999,
+            "cacheVersionUsedToCallCheckout": "C189D0C23EB9B037DDBFD34D17C65D3C_",
+            "listPriceFormated": "R$ 64,90",
+            "fullSellingPrice": "R$ 29,90",
+            "listPrice": 6490,
+            "taxFormated": "R$ 0,00",
+            "taxAsInt": 0,
+            "bestPriceFormated": "R$ 29,90",
+            "bestPrice": 2990,
+            "spotPrice": 2990,
+            "installments": 1,
+            "installmentsValue": 2990,
+            "installmentsInsterestRate": 0,
+            "image": "https://hummelbrasil.vteximg.com.br/arquivos/ids/156216-380-507/BR000081_mescla_1.jpg?v=636839429803330000",
+            "sellerId": "1",
+            "seller": "Hummel",
+            "measures": {
+                "cubicweight": 2.0556,
+                "height": 23,
+                "length": 13,
+                "weight": 1000,
+                "width": 33
+            },
+            "unitMultiplier": 1,
+            "rewardValue": 0,
+            "values": [
+                "14"
+            ]
+        }
+    ]
+}
