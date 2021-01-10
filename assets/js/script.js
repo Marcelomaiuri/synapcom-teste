@@ -55,10 +55,16 @@ function produtoJson() {
 
     //tamanho produto
     let htmlTamanhos = '';
-    for (let y = 0; y < sku.dimensionsMap.Tamanho.length; y++) {
-        htmlTamanhos += `<li class="product__sizes-itens">
-            ${sku.dimensionsMap.Tamanho[y]}
+    for (let y = 0; y < sku.skus.length; y++) {
+        if (sku.skus[y].available == true) {
+            htmlTamanhos += `<li class="product__sizes-itens">
+            ${sku.skus[y].dimensions.Tamanho}
         </li>`;
+        } else {
+            htmlTamanhos += `<li class="product__sizes-itens disabled">
+            ${sku.skus[y].dimensions.Tamanho}
+        </li>`;
+        }
     }
     $(".product__sizes-item").append(htmlTamanhos);
 
@@ -144,7 +150,7 @@ function slick() {
     $(".vitrine > ul").append(htmlShelf)
     $('.vitrine > ul').slick({
         dots: true,
-        arrows:false,
+        arrows: false,
         infinite: true,
         speed: 300,
         slidesToShow: 4,
@@ -176,9 +182,53 @@ function slick() {
     });
 }
 
+function showDiv() {
+    let prevScrollTop = $(window).scrollTop()
+
+    $(window).on('scroll', function (e) {
+
+        let $src = $('.floating-buy'),
+            currentScrollTop = $(this).scrollTop()
+
+        if (currentScrollTop >= prevScrollTop && currentScrollTop > 44) {
+            $src.css({
+                'position': 'fixed'
+            });
+            $('.floating-buy').slideDown();
+        } else {
+            $src.css({
+                'position': 'static',
+            });
+            $(".floating-buy").hide();
+        }
+
+        prevScrollTop = currentScrollTop
+    });
+}
+
+function showBuy() {
+    $(".product__buy-button").click(function () {
+        Swal.fire({
+            icon: 'success',
+            title: 'Produto adicionado ao carrinho',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    })
+
+}
+
+function sizeChoosed() {
+    $(".product__sizes-itens:not(.disabled)").click(function () {
+        $(".product__sizes-itens").removeClass("active");
+        $(this).addClass("active");
+    })
+}
 $(document).ready(function () {
     produtoJson();
     scrollShow();
     slick();
-
+    showDiv();
+    showBuy();
+    sizeChoosed();
 })
