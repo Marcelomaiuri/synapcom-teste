@@ -39,7 +39,15 @@
             </p>
         </div>
         <div class="header-container">
-            <div class="header-container__logo"><a href="/"></a></div>
+
+            <div class="header-container__logo">
+                <div class="header-container__hamburguer">
+                    <span class="header-container__hamburguer-bar"></span>
+                    <span class="header-container__hamburguer-bar"></span>
+                    <span class="header-container__hamburguer-bar"></span>
+                </div>
+                <a href="/"></a>
+            </div>
             <nav class="header-container-nav">
                 <ul class="header-container-nav__links">
                     <li class="header-container-nav__links-item">Masculino</li>
@@ -52,7 +60,9 @@
                 <input type="search" id="search" name="search" autocomplete="off" placeholder="Digite sua busca aqui">
                 <input type="submit" id="submit">
             </div>
+
             <div class="header-container__itens">
+                <div class="header-container__itens-search"></div>
                 <div class="header-container__itens-login"></div>
                 <div class="header-container__itens-minicart">
                     <p>0</p>
@@ -69,9 +79,8 @@
 
                     </ul>
                 </div>
-
             </div>
-            <div class="product__content">                
+            <div class="product__content">
                 <div class="product__container-infos">
                     <div class="product__breadcrumb">
                         <ul>
@@ -119,29 +128,35 @@
                 </div>
             </div>
         </div>
-
     </section>
     <section class="description">
         <div class="description__container">
             <div class="description__information">
                 <div class="description__information-text">
-                    <h2 class="description__title">Descrição</h2>
-                    <p class="description__text"> </p>
+                    <h2 class="description__title description__title-accordion">Descrição</h2>
+                    <div class="description__content">
+                        <p class="description__text"> </p>
+                    </div>
                 </div>
                 <div class="description__feature">
-                    <h2 class="description__title">Características</h2>
-                    <h3 class="description__subtitle">Gênero</h3>
-                    <p class="description__gender description__text"></p>
-                    <h3 class="description__subtitle">Cor</h3>
-                    <p class="description__color description__text"></p>
-                    <h3 class="description__subtitle">Características</h3>
-                    <div class="description__features">
+                    <h2 class="description__title description__title-accordion">Características</h2>
+                    <div class="description__content">
+                        <h3 class="description__subtitle">Gênero</h3>
+                        <p class="description__gender description__text"></p>
+                        <h3 class="description__subtitle">Cor</h3>
+                        <p class="description__color description__text"></p>
+                        <h3 class="description__subtitle">Características</h3>
+                        <div class="description__features"></div>
+                        <h3 class="description__subtitle">Composição</h3>
+                        <p class="description__composition description__text"></p>
+                    </div>
+                    <div>
+                        <h3 class="description__subtitle description__title-accordion">Guia de Tamanhos</h3>
+                        <div class="description__content">
+                            <div class="description__measure"></div>
+                        </div>
 
                     </div>
-                    <h3 class="description__subtitle">Composição</h3>
-                    <p class="description__composition description__text"></p>
-                    <h3 class="description__subtitle">Guia de Tamanhos</h3>
-                    <div class="description__measure"></div>
                 </div>
             </div>
         </div>
@@ -508,6 +523,12 @@
                     <button class="product__buy-button">Adicionar à sacola</button>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="slick__carousel">
+        <div class="slick__carousel-container">
+            <span class="slick__carousel-close"></span>
+            <ul class="slick__carousel-images"></ul>
         </div>
     </div>
 </body>

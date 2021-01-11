@@ -86,12 +86,8 @@ function produtoJson() {
     $(".description__text").text(product[0].description)
     $(".description__gender").text(product[0].Gênero)
     $(".description__color").text(product[0].Cor)
-    // let htmlCaracteristica = product[0].items[0].Características;
-    // for (let c = 0; c < product[0].items[0].Características.length; c++) {
-    //     htmlCaracteristica += `<p class="description__features-itens">
-    //            ${product[c].items[0].Características[0]}
-    //     </p>`;
-    // }
+    let htmlCaracteristica =  product[0].Características[0].replaceAll("\n","<br/> <br/>" )   
+    $(".description__features").html(htmlCaracteristica)
     $(".description__composition").text(product[0].Composição)
     $(".description__measure").html(product[0]['Guia de Tamanhos'])
 }
@@ -165,24 +161,17 @@ function slick() {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 460,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
                 }
             }
         ]
     });
 }
 
-function showDiv() {
+function showBuyButton() {
     let prevScrollTop = $(window).scrollTop()
 
     $(window).on('scroll', function (e) {
@@ -206,7 +195,7 @@ function showDiv() {
     });
 }
 
-function showBuy() {
+function showMessageCart() {
     $(".product__buy-button").click(function () {
         Swal.fire({
             icon: 'success',
@@ -224,11 +213,77 @@ function sizeChoosed() {
         $(this).addClass("active");
     })
 }
+
+function divSlick() {
+    $(".product__images").click(function () {
+        $(".slick__carousel").removeClass("active")
+        $(".slick__carousel").addClass("active")
+
+    })
+    $.ajax({
+        url: `/assets/json/product.jsonc`,
+        cache: false,
+        async: false,
+        type: 'GET',
+        success: function (response) {
+            product = JSON.parse(response)
+
+        }
+
+    })
+    let htmlCarousel = '';
+    for (let i = 0; i < product[0].items[0].images.length; i++) {
+        htmlCarousel += `<li class="slick__carousel-images-item">
+            <img class="slick__carousel-images-image" src="${product[0].items[0].images[i].imageUrl}"/>
+        </li>`;
+    }
+    $(".slick__carousel-images").append(htmlCarousel)
+    $(".slick__carousel-close").click(function(){
+        $(".slick__carousel").removeClass("active") 
+    })
+    slickCarousel() 
+}
+
+function slickCarousel() {
+    $(".slick__carousel-container > ul").slick({
+        dots: true,
+        arrows: true,
+        infinite: true,
+        centerMode:true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    });
+}
+function accordionMobile(){
+    $(".description__title-accordion").click(function(){
+        $(this).toggleClass("active")
+        $(this).next().toggleClass("active")
+
+    })
+}
+function slickCarouselMobile(){
+    $(".product__images-list").slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    })
+}
 $(document).ready(function () {
     produtoJson();
     scrollShow();
     slick();
-    showDiv();
-    showBuy();
-    sizeChoosed();
+    showBuyButton();
+    showMessageCart();
+    sizeChoosed();    
+    
+    if(screen.width > 1024){
+        divSlick();
+    }else{
+        accordionMobile();
+        slickCarouselMobile();
+    }
 })
