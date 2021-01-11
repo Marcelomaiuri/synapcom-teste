@@ -1,12 +1,13 @@
 # synapcom-teste
 Utilizei está documentação para criar gulp e assim rodar o sass no projeto:
 https://devheroes.io/gulp-iniciantes-compilar-minificar-sass/
+
 Utilizei extensão live server no visual code para emulação do projeto:
 https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 
 ## rodando projeto
-npm install
-gulp
+* npm install
+* gulp
 
 ## links de pesquisa
 https://www.w3schools.com/jsref/prop_screen_width.asp
